@@ -1,0 +1,3 @@
+[submodule "jambox-flavours"]
+	path = jambox-flavours
+	url = git@github.com:jambox-digital/jambox-flavours.git
