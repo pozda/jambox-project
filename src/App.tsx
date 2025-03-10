@@ -2,25 +2,26 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import {Button, Card} from "../jambox-flavours/src/"
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
+      <Card>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
-      </div>
+      </Card>
       <h1>Vite + React</h1>
-      <div className="card bg-blue-100 rounded-lg">
-        <button onClick={() => setCount((count) => count + 1)}>
+      <div className="card rounded-lg">
+        <Button variant={"default"} onClick={() => setCount((count) => count + 1)}>
           count is {count}
-        </button>
+        </Button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
